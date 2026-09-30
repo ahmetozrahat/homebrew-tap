@@ -1,9 +1,9 @@
 cask "confible" do
   arch arm: "arm64", intel: "x64"
 
-  version "1.15.0"
-  sha256 arm:   "59c588266a34aad10e44dbbb1ec3bbf3109d12f2e28fb12316fc50587fa28c0d",
-         intel: "be6461f20d9e061a9416263f0453507ffb37ef074da0f7107b62dd93e0a5b4be"
+  version "1.15.1"
+  sha256 arm:   "0fb7b00d221109fbab9ac2f6ce19f8cb0378a686eac8ea218602db4858c08faa",
+         intel: "7a3165dc31f7e803c10d69a3c77f2f83d493d4e316e2183276ca6490994bdcc4"
 
   url "https://github.com/ahmetozrahat/confible-releases/releases/download/v#{version}/confible-#{version}-#{arch}.dmg"
   name "Confible"
