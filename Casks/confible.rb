@@ -1,6 +1,6 @@
 cask "confible" do
-  version "2.2.0"
-  sha256 "5467173ee3d1e1a5f9aa5e802729ae005f36afba981b97ab7cd44e4e875a4bee"
+  version "2.2.1"
+  sha256 "d9e397a759a7d55c4b6bb535171da04c9d5d0017d9c15c840cf97dc002e9b5e4"
 
   url "https://github.com/ahmetozrahat/confible-releases/releases/download/v#{version}/Confible-#{version}.dmg"
   name "Confible"
