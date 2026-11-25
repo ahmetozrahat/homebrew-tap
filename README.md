@@ -13,8 +13,8 @@ serves, at the same SHA-256 — Apple-notarized and signed as
 `Developer ID Application: Ahmet Özrahat (GF446FQ39J)`. Nothing is rebuilt here,
 and this repository holds no binaries: the cask is a URL and a checksum.
 
-Confible keeps its own updater, which reads `latest-mac.yml` from the releases
-repository. A `brew` install and a `.dmg` install are therefore the same
+Confible keeps its own updater (Sparkle), which reads `appcast.xml` from the
+releases repository. A `brew` install and a `.dmg` install are therefore the same
 application on the same update path — which is why the cask declares
 `auto_updates true` and `brew upgrade` leaves the app to update itself.
 
@@ -34,7 +34,7 @@ brew uninstall --zap --cask confible    # the app, its settings and its cache
 ```
 
 `--zap` deletes the connection library and the local vault. The passwords
-themselves are in the login keychain under `Confible Safe Storage`, and no
+themselves are in the login keychain under `Confible`, and no
 uninstaller touches the keychain — remove that item by hand in Keychain Access
 if you want it gone.
 

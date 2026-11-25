@@ -1,11 +1,8 @@
 cask "confible" do
-  arch arm: "arm64", intel: "x64"
+  version "2.2.0"
+  sha256 "5467173ee3d1e1a5f9aa5e802729ae005f36afba981b97ab7cd44e4e875a4bee"
 
-  version "1.22.0"
-  sha256 arm:   "336f68d3d805e25ebcfb7e093198cd2c5d4e9584f8d8120102122e078e4d5b00",
-         intel: "f7bcd2ba3286595ba4461570a8fd071b4adb2341eb6ec30e04f01c891baadd69"
-
-  url "https://github.com/ahmetozrahat/confible-releases/releases/download/v#{version}/confible-#{version}-#{arch}.dmg"
+  url "https://github.com/ahmetozrahat/confible-releases/releases/download/v#{version}/Confible-#{version}.dmg"
   name "Confible"
   desc "Connection manager for SSH, SFTP, FTP, SQL, S3, Redis and RDP"
   homepage "https://confible.dev/"
@@ -16,7 +13,7 @@ cask "confible" do
   end
 
   auto_updates true
-  depends_on macos: :monterey
+  depends_on macos: :ventura
 
   app "Confible.app"
 
